@@ -1,0 +1,11 @@
+#dataTable {
+  counter-reset: tableCount;
+}
+
+#dataTable tbody tr {
+  counter-increment: row;
+}
+
+#dataTable tbody td:first-child::before {
+  content: counter(row);
+}

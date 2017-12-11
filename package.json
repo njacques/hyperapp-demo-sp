@@ -1,0 +1,24 @@
+{
+  "name": "hyperapp-jsx-rollup-buble-minimal-boilerplate",
+  "version": "0.0.0",
+  "description": "hyperapp + jsx + rollup + buble minimal boilerplate",
+  "main": "index.js",
+  "dependencies": {
+    "hyperapp": "^0.16.2"
+  },
+  "devDependencies": {
+    "rollup": "^0.52.1",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "build": "rollup -cf iife -i src/index.js -o bundle.js",
+    "dev": "rollup -cwf iife -i src/index.js -o bundle.js"
+  },
+  "keywords": [
+    "hyperapp"
+  ],
+  "author": "Jorge Bucaran",
+  "license": "MIT"
+}
